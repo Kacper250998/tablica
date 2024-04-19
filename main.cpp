@@ -1,0 +1,39 @@
+#include <iostream>
+#include "array.h"
+
+void menu(void){
+    printf("\n1. Enter the values into array\n");
+    printf("2. Display the content of the array\n");
+    printf("0. EXIT\n");
+    printf(" Select an option\n");
+}
+
+int main() {
+    int array[SIZE] = {1, 2, 3, 4, 5, 6, 7, 8, 9,10,};
+    printf("Simple array...\n");
+
+    int option = 0;
+
+    do {
+        menu();
+        scanf("%d",&option);
+
+        switch(option){
+            case 0:
+                break;
+            case 1:
+                enterDataIntoArray(array);
+                break;
+            case 2:
+                displayArray(array);
+                break;
+
+            default:
+                printf("Choose the right option\n");
+        }
+
+    }while(option!=0);
+
+    return 0;
+}
+
