@@ -5,6 +5,7 @@ void menu(void){
     printf("\n1. Enter the values into array\n");
     printf("2. Display the content of the array\n");
     printf("3. Determine the maximum value\n");
+    printf("4. Determine the minimum value\n");
     printf("0. EXIT\n");
     printf(" Select an option\n");
 }
@@ -30,6 +31,9 @@ int main() {
                 break;
             case 3:
                 printf("Maximum value = %d\n",findMaximumValue(array));
+                break;
+            case 4:
+                printf("Minimum value = %d\n",findMinimumValue(array));
                 break;
 
             default:

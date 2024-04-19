@@ -6,4 +6,5 @@
 void enterDataIntoArray(int *array);
 void displayArray(int *array);
 int findMaximumValue(int *array);
+int findMinimumValue(int *array);
 #endif //UNTITLED19_ARRAY_H
