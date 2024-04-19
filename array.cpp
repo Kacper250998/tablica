@@ -23,3 +23,12 @@ int findMaximumValue(int *array){
     }
     return max;
 }
+int findMinimumValue(int *array){
+    int min = *array;
+    for(int i=0; i<SIZE; i++){
+        if(*(array +i) < min){
+            min = *(array +i);
+        }
+    }
+    return min;
+}
